@@ -107,7 +107,7 @@ a {
     max-width: 293px;
     width: 100%;
     height: auto;
-    margin-top: 38px;
+    margin-top: 50px;
     right: 0;
     position: absolute;
 }
@@ -226,6 +226,8 @@ a {
 }
 
 .stories-pfp {
+    background-image: './images/stories.background.jpg';
+    background-size: cover;
     flex-direction: initial;
     justify-content: center;
     align-items: center;
