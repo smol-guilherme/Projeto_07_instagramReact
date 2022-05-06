@@ -1,9 +1,9 @@
-import Recommendation from "./Recommendation"
+import Recommendations from "./Recommendations"
 
 export default function Sidebar() {
     return (
         <div className="anchor">
-            <Recommendation />
+            <Recommendations />
         </div>
-    )
+    );
 }

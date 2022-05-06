@@ -1,13 +1,13 @@
 import Top from './Top';
 import Sidebar from './Sidebar';
-import Content from './Content';
+// import Content from './Content';
+/* <Content /> */
 
 export default function App() {
     return (
-        <div className='root'>
+        <div>
             <Top />
             <Sidebar />
-            <Content />
 
         </div>
     )

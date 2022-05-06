@@ -1,17 +1,23 @@
+function Info(props) {
+    return(
+        <a className="extra-info" href="/"><div>{props.name} ·</div></a>
+    )
+}
+
 export default function Eula() {
     return (
         <div className="eula">
-            <a className="extra-info" href=""><div>Sobre</div></a>゜
-            <a className="extra-info" href=""><div>Ajuda</div></a>゜
-            <a className="extra-info" href=""><div>Imprensa</div></a>゜
-            <a className="extra-info" href=""><div>API</div></a>゜
-            <a className="extra-info" href=""><div>Carreiras</div></a>゜
-            <a className="extra-info" href=""><div>Privacidade</div></a>゜
-            <a className="extra-info" href=""><div>Termos</div></a>゜
-            <a className="extra-info" href=""><div>Localizações</div></a>゜
-            <a className="extra-info" href=""><div>Contas mais relevantes</div></a>゜
-            <a className="extra-info" href=""><div>Hashtags</div></a>゜
-            <a className="extra-info" href=""><div>Idiomas</div></a>゜
+            <Info name="Sobre" />
+            <Info name="Ajuda" />
+            <Info name="Imprensa" />
+            <Info name="API" />
+            <Info name="Carreiras" />
+            <Info name="Privacidade" />
+            <Info name="Termos" />
+            <Info name="Localizações" />
+            <Info name="Contas mais relevantes" />
+            <Info name="Hashtags" />
+            <Info name="Idiomas" />
         </div>
     )
 }

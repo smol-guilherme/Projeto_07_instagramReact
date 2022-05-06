@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     border-radius: 3px;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #262626;
     background-color: #fafafa;
@@ -79,7 +80,7 @@ a {
     display: none;
 }
 
-.search-bar>div {
+.search-bar > div {
     padding: 5px;
 }
 
@@ -231,6 +232,7 @@ a {
     flex-direction: initial;
     justify-content: center;
     align-items: center;
+    width: 60px;
     height: 60px;
     border-radius: 50%;
 }
@@ -262,6 +264,7 @@ a {
 
 .featured-pfp {
     width: 32px;
+    height: 32px;
     border-radius: 50%;
 }
 
@@ -272,6 +275,7 @@ a {
 .profile-picture .stories-pfp {
     position: relative;
     width: 60px;
+    height: 60px;
     top: 5px;
     margin-bottom: 7px;
     z-index: 1;
@@ -339,6 +343,7 @@ a {
 
 .featured-pfp-mini {
     width: 20px;
+    height: 20px;
     padding-left: 3px;
     border-radius: 50%;
 }
@@ -350,7 +355,7 @@ a {
     font-weight: 500;
 }
 
-.mobile-buttons {
+.mobile {
     display: none;
 }
 
@@ -393,7 +398,7 @@ a {
         display: none;
     }
 
-    .search-bar .brand-logo {
+    .mobile {
         display: initial;
     }
 

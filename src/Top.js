@@ -9,7 +9,7 @@ export default function Top() {
                     </div>
                     <div>
                         <input className="search-bar" type="text" placeholder="Pesquisar" />
-                        <img className="brand-logo" src="./images/logo.png" alt="" />
+                        <img className="mobile brand-logo" src="./images/logo.png" alt="" />
                     </div>
                     <div className="settings-menu">
                         <img className="top-icon" src="./images/paper-plane-outline.svg" alt="" />
