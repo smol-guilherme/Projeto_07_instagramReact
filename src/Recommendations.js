@@ -1,23 +1,26 @@
-import User from "./User";
-import Eula from "./Eula";
-import Extra from "./Extra";
-import Context from './Context';
+import Users from "./Users";
 
-function Recs(props) {
+function Top() {
     return (
-        <div className="sidebar-actions">
-            <a href={props.url}>
-                <div className="post-picture">
-                    <img className="featured-pfp" src={props.image} alt="" />
-                    <div>
-                        <div className="profile-name">{props.name}</div>
-                        <div className="extra-info">sugerido para você</div>
-                    </div>
-                </div>
-                <div>
-                    <p className="follow-action">Seguir</p>
-                </div>
-            </a>
+        <div class="titulo">
+            Sugestões para você
+            <div>Ver tudo</div>
+        </div>
+    );
+}
+
+function Eula() {
+    return (
+        <div class="links">
+            Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
+        </div>
+    );
+}
+
+function Extra() {
+    return (
+        <div class="copyright">
+            © 2021 INSTAGRAM FROM META
         </div>
     );
 }
@@ -26,31 +29,30 @@ export default function Recommendations() {
     const pageRecs = [
         {
             url: "https://www.instagram.com/prof.dennysxavier/",
-            img: "./content/prof.dennys.jpg",
+            img: "./assets/content/prof.dennys.jpg",
             name: "prof.dennysxavier"
         },
         {
             url: "https://www.instagram.com/raquelrealoficial/",
-            img: "./content/raquelreal.jpg",
+            img: "./assets/content/raquelreal.jpg",
             name: "raquelrealoficial"
         },
         {
             url: "https://www.instagram.com/genshashin/",
-            img: "./content/genshashin.jpg",
+            img: "./assets/content/genshashin.jpg",
             name: "genshashin"
         },
         {
             url: "https://www.instagram.com/catioro.reflexivo/",
-            img: "./content/catioro.jpg",
+            img: "./assets/content/catioro.jpg",
             name: "catioro.reflexivo"
         }
     ];
 
     return (
-        <div className="recommendations">
-            <User />
-            <Context />
-            { pageRecs.map((user) => <Recs key={user.url} pic={user.img} name={user.page_name} />) }
+        <div class="sugestoes">
+            <Top />
+            { pageRecs.map((user) => <Users url={user.url} pic={user.img} name={user.name} />) }
             <Eula />
             <Extra />
         </div>

@@ -1,14 +1,12 @@
 import Stories from "./Stories";
 import Posts from "./Posts";
-import Mobile from "./Mobile";
 
-export default function Content() {
+export default function Leftside() {
     return (
-        <div className="content">
+        <div class="esquerda">
             <Stories />
             <Posts />
-
-            <Mobile />
         </div>
-    )
+    );
 }
+

@@ -1,8 +1,10 @@
-import Recommendations from "./Recommendations"
+import Recommendations from "./Recommendations";
+import User from "./User";
 
 export default function Sidebar() {
     return (
-        <div className="anchor">
+        <div class="sidebar">
+            <User />
             <Recommendations />
         </div>
     );

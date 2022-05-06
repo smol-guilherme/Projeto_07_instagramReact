@@ -1,14 +1,14 @@
-import Top from './Top';
-import Sidebar from './Sidebar';
-// import Content from './Content';
-/* <Content /> */
+import Navbar from './Navbar';
+import Mobile from "./Mobile";
+import Page from './Page';
 
 export default function App() {
     return (
         <div>
-            <Top />
-            <Sidebar />
+            <Navbar />
+            <Page />
 
+            <Mobile />
         </div>
     )
 }
