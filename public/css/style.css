@@ -314,6 +314,10 @@ body {
   display: none !important;
 }
 
+.red-heart {
+  color: #ec4c54;
+}
+
 @media (max-width: 935px) {
   .sidebar {
     display: none;

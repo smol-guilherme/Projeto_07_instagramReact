@@ -1,9 +1,28 @@
+import React from 'react';
+
+const DEFAULTS = {
+    name: 'heart-outline',
+    color: 'md hydrated'
+};
+
 export default function Interactions() {
+
+    const [icon, setIcon] = React.useState(DEFAULTS);
+
+    function changeHeart() {
+        if(icon.name === 'heart-outline') {
+            setIcon( { name: 'heart', color: 'md hydrated red-heart' } );
+        } else {
+            setIcon( { name: 'heart-outline', color: 'md hydrated' });
+        }
+    }
+
+    // <ion-icon name="heart"></ion-icon>
     return (
         <div class="fundo">
             <div class="acoes">
                 <div>
-                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon onClick={changeHeart} name={icon.name} class={icon.color}></ion-icon>
                     <ion-icon name="chatbubble-outline"></ion-icon>
                     <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>
@@ -18,5 +37,5 @@ export default function Interactions() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
